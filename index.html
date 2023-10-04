@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Index</title>
+    
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="app.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+</head>
+<body>
+    
+    <ul class="nav nav-underline border-primary">
+        <h1 id="dig">USER Visualizer</h1>
+        <li class="nav-item">
+            <li><button id="navbutton" onclick="Listar()">Listar tabla</button></li> 
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="register.html">Register</a>
+        </li>
+        
+        <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+      </ul>
+
+    <section class="big-box">
+
+        <section class="section-with-image">
+            <div class="section-text">
+            <h1 id="htitle">Conoce más acerca de los formularios</h1>
+            <p id="p1">
+                Los formularios en HTML van más allá de recolectar datos; son herramientas para interactuar con usuarios, 
+                dar retroalimentación en tiempo real y personalizar experiencias en línea. Al aprender a usarlos, los 
+                desarrolladores pueden crear sitios web funcionales y atractivos que satisfagan a los visitantes y fomenten 
+                la interacción.
+            </p>
+            </div>
+            <div class="img1"></div>
+        </section>
+
+    </section>
+
+    <div class="container">
+      <div class="table-responsive">
+        <table class="table table-hover mt-5 mb-5">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Apellido</th>
+                <th scope="col">Usuario</th>
+                <th scope="col">Direccion</th>
+                <th scope="col">Correo</th>
+                <th scope="col">Cedula</th>
+                <th scope="col">Contraseña</th>
+                <th scope="col">Teléfono</th>
+              </tr>
+            </thead>
+            <tbody id="cuerpo-tabla">
+              <tr>
+           
+              </tr>
+            </tbody>
+          </table>
+      </div>
+    </div>
+ 
+
+    <div class="container ">
+        <footer class="py-3 my-4 mt-11">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Register</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Login</a></li>
+            <li class="nav-item"><a href="https://www.cuc.edu.co" class="nav-link px-2 text-body-secondary">CUC</a></li>
+          </ul>
+          <p class="text-center text-body-secondary"> Developed by: Daniel Escorcia </p>
+          <p class="text-center text-body-secondary">&copy; Desarrollo Web I 2023 Company, Inc</p>
+          
+        </footer>
+      </div>
+
+
+</body>
+</html>

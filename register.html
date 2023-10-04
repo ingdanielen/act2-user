@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Index</title>
+    
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="app.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+</head>
+<body>
+    
+
+        <ul class="nav nav-underline border-primary">
+            <h1 id="dig">USER Visualizer</h1>
+            <li class="nav-item">
+                <li ><button id="navbutton" onclick="Listar()">Listar tabla</button></li> 
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Register</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+              </li>
+          </ul>
+          
+        
+        <div class="container">
+            <div class="card border-primary mt-5 text-center">
+                <div class="card-header">Registro de usuarios</div>
+                <div class="card-body">
+                    <div class="card-text">
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <img class="img-fluid" src="./img/regisimg.png" alt="registro">
+                            </div>   
+                            <div class="col-12 col-md-6">
+                               <form >
+                                <input type="text" placeholder="Ingrese su nombre" id="nombre" class="form-control mb-3">
+                                <input type="text" placeholder="Ingrese su apellido" id="apellido" class="form-control mb-3">
+                                <input type="text" placeholder="Ingrese su Usuario" id="user" class="form-control mb-3">
+                                <input type="text" placeholder="Ingrese su direccion" id="direccion" class="form-control mb-3">
+                                <input type="text" placeholder="Ingrese su correo" id="correo" class="form-control mb-3">
+                                <input type="number" placeholder="Ingrese su cedula" id="cedula" class="form-control mb-3">
+                                <input type="text" placeholder="Ingrese su contraseña" id="contraseña" class="form-control mb-3">
+                                <input type="number" placeholder="Ingrese su teléfono" id="telefono" class="form-control mb-3">
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-outline-primary" onclick="registrar()">Registrar</button>
+                                </div>
+                                
+                            </form>
+                                
+                            </div>              
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table table-hover mt-5">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Apellido</th>
+                        <th scope="col">Usuario</th>
+                        <th scope="col">Direccion</th>
+                        <th scope="col">Correo</th>
+                        <th scope="col">Cedula</th>
+                        <th scope="col">Contraseña</th>
+                        <th scope="col">Teléfono</th>
+                      </tr>
+                    </thead>
+                    <tbody id="cuerpo-tabla">
+                      <tr>
+                   
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+            
+
+        </div>
+
+        <div class="container">
+            <footer class="py-3 my-4 ">
+              <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Register</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link px-2 text-body-secondary">Login</a></li>
+                <li class="nav-item"><a href="https://www.cuc.edu.co" class="nav-link px-2 text-body-secondary">CUC</a></li>
+              </ul>
+              <p class="text-center text-body-secondary"> Developed by: Daniel Escorcia </p>
+              <p class="text-center text-body-secondary">&copy; Desarrollo Web I 2023 Company, Inc</p>
+              
+            </footer>
+          </div>
+        
+        
+        <script src="./app.js"></script>
+</body>
+</html>
